@@ -1,12 +1,10 @@
 import '../styles/stylesheet.scss'
 
-import Link from 'next/link'
+import Hero from '../components/hero'
 
 const Index = () => (
   <div>
-    <div className="container">
-      <h1 className="title">Shadow</h1>
-    </div>
+    <Hero />
   </div>
 )
 

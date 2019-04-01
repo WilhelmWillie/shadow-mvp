@@ -2,5 +2,8 @@
 @import '~bulma/sass/utilities/initial-variables';
 @import '~bulma/sass/utilities/functions';
 
+// Import variable overrides
+@import './variables';
+
 // Import Bulma, a CSS framework
 @import '~bulma/bulma';
