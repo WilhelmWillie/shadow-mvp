@@ -1,8 +1,12 @@
 import '../styles/stylesheet.scss'
 
+import Head from 'next/head'
+
 const About = () => (
   <div>
-    About
+    <Head>
+      <title>About Shadow</title>
+    </Head>
   </div>
 )
 
