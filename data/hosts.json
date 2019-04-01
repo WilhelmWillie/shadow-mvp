@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "email": "tate@usc.edu",
+    "name": "Sam Tate",
+    "major": "Business Administration",
+    "hometown": "Los Angeles, CA",
+    "class": "Junior"
+  },
+  {
+    "id": 1,
+    "email": "vice@usc.edu",
+    "name": "Hailey Vice",
+    "major": "Business Administration",
+    "hometown": "Los Angeles, CA",
+    "class": "Junior"
+  },
+  {
+    "id": 2,
+    "email": "wwillie@usc.edu",
+    "name": "Wilhelm Willie",
+    "major": "Business Administration",
+    "hometown": "Los Angeles, CA",
+    "class": "Junior"
+  },
+  {
+    "id": 3,
+    "email": "kelliny@usc.edu",
+    "name": "Chris Kelliny",
+    "major": "Business Administration",
+    "hometown": "Los Angeles, CA",
+    "class": "Junior"
+  },
+  {
+    "id": 4,
+    "email": "yashar@usc.edu",
+    "name": "Yashar Kutay",
+    "major": "Business Administration",
+    "hometown": "Los Angeles, CA",
+    "class": "Junior"
+  },
+  {
+    "id": 5,
+    "email": "majed@usc.edu",
+    "name": "Majed Jendi",
+    "major": "Business Administration",
+    "hometown": "Los Angeles, CA",
+    "class": "Junior"
+  }
+]

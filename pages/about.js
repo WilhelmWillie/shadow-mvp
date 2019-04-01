@@ -1,12 +1,12 @@
 import '../styles/stylesheet.scss'
 
-import Head from 'next/head'
+import Head from '../components/head'
 
 const About = () => (
   <div>
-    <Head>
-      <title>About Shadow</title>
-    </Head>
+    <Head title="Shadow - About Us" />
+
+    To-do fill this out :)
   </div>
 )
 
