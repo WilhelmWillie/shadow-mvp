@@ -19,6 +19,8 @@ class Book extends Component {
       modalActive: false,
       selectedHost: Hosts[0]
     }
+
+    console.log(process.env.NODE_ENV)
   }
 
   selectHost = (host) => {
