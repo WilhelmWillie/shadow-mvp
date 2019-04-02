@@ -10,17 +10,27 @@ const Schedule = () => (
     <Head title="Shadow - Schedule a Date" />
     <NavBar/>
 
-    <div className="container has-text-centered">
-      <h1 className="title">
-        Schedule a Date
-      </h1>
+    <section className="section">
+      <div className="container">
+        <div className="columns">
+          <div className="column">
+            <img src="/static/schedule.svg" />
+          </div>
 
-      <p>Date selection fields will go here later</p>
+          <div className="column is-three-fifths has-text-centered">
+            <h1 className="title">
+              Schedule a Date
+            </h1>
 
-      <br/>
+            <p>Date selection fields will go here later</p>
 
-      <Link href="/tour/book"><button className="button is-black">Book a Host</button></Link>
-    </div>
+            <br/>
+
+            <Link href="/tour/book"><button className="button is-black">Book a Host</button></Link>
+          </div>
+        </div>
+      </div>
+    </section>
   </>
 )
 

@@ -2,19 +2,33 @@ import '../styles/hero.scss'
 
 import Link from 'next/link'
 
-const Hero = () => (
-  <section className="hero is-fullheight-with-navbar is-primary">
-    <div className="hero-body">
-      <div className="container has-text-centered">
-        <div className="take-a-tour">
-          <h1 className="title">
-            Shadow
-          </h1>
-          <h2 className="subtitle">
-            Experience what it's really like to be a college student.
-          </h2>
+import NavBar from './navbar'
+import HeroImg from './heroImg'
 
-          <Link href="/tour/find"><button className="button is-black">Take a Tour</button></Link>
+const Hero = () => (
+  <section className="hero">
+    <div className="hero-head">
+      <NavBar />
+    </div>
+
+    <div className="hero-body">
+      <div className="container">
+        <div className="columns is-vcentered">
+          <div className="column">
+            <h1 className="title">
+              Shadow
+            </h1>
+            <h2 className="subtitle">
+              <b>Real students. Real voices. Real experiences.</b> <br/>
+              Experience what it's really like to be a college student.
+            </h2>
+
+            <Link href="/tour/find">
+              <button className="button is-dark is-medium">Take a Tour</button>
+            </Link>
+          </div>
+
+          <HeroImg />
         </div>
       </div>
     </div>

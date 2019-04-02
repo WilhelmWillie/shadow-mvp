@@ -52,6 +52,50 @@ class Book extends Component {
             </div>
           </div>
 
+          <div className="filter columns is-vcentered">
+            <div className="field column">
+              <label className="label">Major</label>
+
+              <div className="select">
+                <select>
+                  <option>Filter by Major</option>
+                  <option>Business Administration</option>
+                  <option>Computer Science</option>
+                  <option>Art and Design</option>
+                </select>
+              </div>
+            </div>
+
+            <div className="field column">
+              <label className="label">Class</label>
+
+              <div className="select">
+                <select>
+                  <option>Filter by Class</option>
+                  <option>Senior</option>
+                  <option>Junior</option>
+                  <option>Sophomore</option>
+                </select>
+              </div>
+            </div>
+
+            <div className="field column">
+              <div className="control">
+                <label className="checkbox">
+                  <input type="checkbox"/> Greek
+                </label>
+              </div>
+            </div>
+
+            <div className="field column">
+              <div className="control">
+                <label className="checkbox">
+                  <input type="checkbox"/> International
+                </label>
+              </div>
+            </div>
+          </div>
+
           <div className="columns is-multiline">
             {hostDetails}
           </div>

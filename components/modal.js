@@ -2,6 +2,9 @@ const Modal = (props) => {
   const modalClass = (props.isActive) ? ('modal is-active') : ('modal')
   const host = props.selectedHost
 
+  const experience = host.details.experience.join(", ")
+  const interests = host.details.interests.join(", ")
+
   return (
     <div className={modalClass}>
       <div className="modal-background" onClick={props.toggleModal}></div>
@@ -22,7 +25,7 @@ const Modal = (props) => {
             <span className="icon">
               <i className="fas fa-book"></i>
             </span>
-            {host.major}
+            {host.major} (Minor: {host.details.minor})
           </p>
 
           <p>
@@ -30,6 +33,24 @@ const Modal = (props) => {
               <i className="fas fa-home"></i>
             </span>
             {host.hometown}
+          </p>
+
+          <hr/>
+
+          <p><b>About your host:</b> {host.details.biography}</p>
+
+          <hr/>
+
+          <p>
+            <b>Clubs/Organizations: </b> {host.details.involvements}
+          </p>
+
+          <p>
+            <b>Interests: </b> {interests}
+          </p>
+
+          <p>
+            <b>Internships/Experience: </b> {experience}
           </p>
         </section>
         <footer className="modal-card-foot">

@@ -8,7 +8,6 @@ const Index = () => (
   <div>
     <Head title="Shadow - Experience what it is really like to be a college student" />
 
-    <NavBar />
     <Hero />
   </div>
 )

@@ -5,7 +5,20 @@
     "name": "Sam Tate",
     "major": "Business Administration",
     "hometown": "Los Angeles, CA",
-    "class": "Junior"
+    "class": "Junior",
+    "details": {
+      "minor": "Digital Entrepreneurship",
+      "involvements": "SparkSC, LavaLab, TCG, LACI",
+      "interests": ["Surfing", "USC Sports", "Traveling", "Finance", "UI/UX Design"],
+      "dreamJob": "Venture Capital",
+      "experience": ["Finance Intern @ Goldman Sachs", "Summer Analyst @ BCG"],
+      "social": {
+        "linkedin": "test",
+        "twitter": "jack"
+      },
+      "greek": true,
+      "biography": "Lorem ipsum solor amet consectetur adipiscing elit."
+    }
   },
   {
     "id": 1,
@@ -13,7 +26,20 @@
     "name": "Hailey Vice",
     "major": "Business Administration",
     "hometown": "Los Angeles, CA",
-    "class": "Junior"
+    "class": "Junior",
+    "details": {
+      "minor": "Digital Entrepreneurship",
+      "involvements": "SparkSC, LavaLab, TCG, LACI",
+      "interests": ["Surfing", "USC Sports", "Traveling", "Finance", "UI/UX Design"],
+      "dreamJob": "Venture Capital",
+      "experience": ["Finance Intern @ Goldman Sachs", "Summer Analyst @ BCG"],
+      "social": {
+        "linkedin": "test",
+        "twitter": "jack"
+      },
+      "greek": true,
+      "biography": "Lorem ipsum solor amet consectetur adipiscing elit."
+    }
   },
   {
     "id": 2,
@@ -21,7 +47,20 @@
     "name": "Wilhelm Willie",
     "major": "Business Administration",
     "hometown": "Los Angeles, CA",
-    "class": "Junior"
+    "class": "Junior",
+    "details": {
+      "minor": "Digital Entrepreneurship",
+      "involvements": "SparkSC, LavaLab, TCG, LACI",
+      "interests": ["Surfing", "USC Sports", "Traveling", "Finance", "UI/UX Design"],
+      "dreamJob": "Venture Capital",
+      "experience": ["Finance Intern @ Goldman Sachs", "Summer Analyst @ BCG"],
+      "social": {
+        "linkedin": "test",
+        "twitter": "jack"
+      },
+      "greek": true,
+      "biography": "Lorem ipsum solor amet consectetur adipiscing elit."
+    }
   },
   {
     "id": 3,
@@ -29,7 +68,20 @@
     "name": "Chris Kelliny",
     "major": "Business Administration",
     "hometown": "Los Angeles, CA",
-    "class": "Junior"
+    "class": "Junior",
+    "details": {
+      "minor": "Digital Entrepreneurship",
+      "involvements": "SparkSC, LavaLab, TCG, LACI",
+      "interests": ["Surfing", "USC Sports", "Traveling", "Finance", "UI/UX Design"],
+      "dreamJob": "Venture Capital",
+      "experience": ["Finance Intern @ Goldman Sachs", "Summer Analyst @ BCG"],
+      "social": {
+        "linkedin": "test",
+        "twitter": "jack"
+      },
+      "greek": true,
+      "biography": "Lorem ipsum solor amet consectetur adipiscing elit."
+    }
   },
   {
     "id": 4,
@@ -37,7 +89,20 @@
     "name": "Yashar Kutay",
     "major": "Business Administration",
     "hometown": "Los Angeles, CA",
-    "class": "Junior"
+    "class": "Junior",
+    "details": {
+      "minor": "Digital Entrepreneurship",
+      "involvements": "SparkSC, LavaLab, TCG, LACI",
+      "interests": ["Surfing", "USC Sports", "Traveling", "Finance", "UI/UX Design"],
+      "dreamJob": "Venture Capital",
+      "experience": ["Finance Intern @ Goldman Sachs", "Summer Analyst @ BCG"],
+      "social": {
+        "linkedin": "test",
+        "twitter": "jack"
+      },
+      "greek": true,
+      "biography": "Lorem ipsum solor amet consectetur adipiscing elit."
+    }
   },
   {
     "id": 5,
@@ -45,6 +110,19 @@
     "name": "Majed Jendi",
     "major": "Business Administration",
     "hometown": "Los Angeles, CA",
-    "class": "Junior"
+    "class": "Junior",
+    "details": {
+      "minor": "Digital Entrepreneurship",
+      "involvements": "SparkSC, LavaLab, TCG, LACI",
+      "interests": ["Surfing", "USC Sports", "Traveling", "Finance", "UI/UX Design"],
+      "dreamJob": "Venture Capital",
+      "experience": ["Finance Intern @ Goldman Sachs", "Summer Analyst @ BCG"],
+      "social": {
+        "linkedin": "test",
+        "twitter": "jack"
+      },
+      "greek": true,
+      "biography": "Lorem ipsum solor amet consectetur adipiscing elit."
+    }
   }
 ]
