@@ -46,6 +46,10 @@ class Schedule extends Component {
                   Schedule a Date
                 </h1>
 
+                <h2 className="subtitle">
+                  Let us know when you're available
+                </h2>
+
                 <div className="field">
                   <label className="label">Select a Day</label>
 

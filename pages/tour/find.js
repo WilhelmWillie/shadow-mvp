@@ -1,51 +1,89 @@
 import '../../styles/stylesheet.scss'
 
+import { Component } from 'react'
+
 import Link from 'next/link'
 
 import Head from '../../components/head'
 import NavBar from '../../components/navbar'
 import Footer from '../../components/footer'
 
-const Find = () => (
-  <>
-    <Head title="Shadow - Find Your School" />
-    <NavBar />
+class Find extends Component {
+  constructor(props) {
+    super(props)
 
-    <section className="section">
-      <div className="container">
-        <div className="columns">
-          <div className="column">
-            <img src="/static/school.svg" />
-          </div>
+    this.state = {
+      school: 'usc'
+    }
+  }
 
-          <div className="column is-three-fifths has-text-centered">
-            <h1 className="title">
-              Find Your School
-            </h1>
-            <h2 className="subtitle">
-              Select the school you're interested in visiting.
-            </h2>
+  selectSchool = (e) => {
+    this.setState({
+      school: e.target.value
+    })
+  }
 
-            <div className="select">
-              <select>
-                <option value="usc">University of Southern California</option>
-                <option value="unavailable">UCLA (Coming Soon)</option>
-                <option value="unavailable">UCSD (Coming Soon)</option>
-                <option value="unavailable">Stanford (Coming Soon)</option>
-                <option value="unavailable">Berkeley (Coming Soon)</option>
-              </select>
-            </div>
-
-            <br/><br/>
-
-            <Link href="/tour/schedule"><button className="button is-black">Schedule a Date</button></Link>
-          </div>
-        </div>
+  render() {
+    const error = (this.state.school !== 'usc') ? (
+      <div className="notification is-warning">
+        Currently, Shadow is not available at your selected school. However, we have plans to expand to other schools in California! Check back soon.
       </div>
-    </section>
+    ) : (undefined)
 
-    <Footer />
-  </>
-)
+    const button = (this.state.school === 'usc') ? (
+      <Link href="/tour/schedule">
+        <button className="button is-black">Schedule a Date</button>
+      </Link>
+    ) : (
+      <button className="button is-disabled" disabled>Schedule a Date</button>
+    )
+
+    return (
+      <>
+        <Head title="Shadow - Find Your School" />
+        <NavBar />
+
+        <section className="section">
+          <div className="container">
+            <div className="columns">
+              <div className="column">
+                <img src="/static/school.svg" />
+              </div>
+
+              <div className="column is-three-fifths has-text-centered">
+                <h1 className="title">
+                  Find Your School
+                </h1>
+                <h2 className="subtitle">
+                  Select the school you're interested in visiting
+                </h2>
+
+                <div className="field">
+                  <div className="select">
+                    <select value={this.state.school} onChange={this.selectSchool}>
+                      <option value="usc">University of Southern California</option>
+                      <option value="unavailable">UCLA (Coming Soon)</option>
+                      <option value="unavailable">UCSD (Coming Soon)</option>
+                      <option value="unavailable">Stanford (Coming Soon)</option>
+                      <option value="unavailable">Berkeley (Coming Soon)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div className="field">
+                  {button}
+                </div>
+
+                {error}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <Footer />
+      </>
+    )
+  }
+}
 
 export default Find
