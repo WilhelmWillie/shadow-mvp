@@ -4,6 +4,7 @@ import Link from 'next/link'
 
 import Head from '../../components/head'
 import NavBar from '../../components/navbar'
+import Footer from '../../components/footer'
 
 const Find = () => (
   <>
@@ -42,6 +43,8 @@ const Find = () => (
         </div>
       </div>
     </section>
+
+    <Footer />
   </>
 )
 

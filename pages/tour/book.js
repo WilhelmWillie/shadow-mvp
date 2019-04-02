@@ -10,6 +10,7 @@ import Hosts from '../../data/hosts.json'
 
 import HostDetails from '../../components/hostDetails'
 import Modal from '../../components/modal'
+import Footer from '../../components/footer'
 
 class Book extends Component {
   constructor(props) {
@@ -186,6 +187,8 @@ class Book extends Component {
             {hostDetails}
           </div>
         </div>
+
+        <Footer />
 
         <Modal
           isActive={this.state.modalActive}

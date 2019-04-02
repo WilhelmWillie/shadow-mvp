@@ -3,6 +3,7 @@ import '../styles/stylesheet.scss'
 import Head from '../components/head'
 import Hero from '../components/hero'
 import NavBar from '../components/navbar'
+import Footer from '../components/footer'
 
 const Index = () => (
   <div>
@@ -47,11 +48,7 @@ const Index = () => (
       </div>
     </section>
 
-    <footer className="footer">
-      <div className="container has-text-centered">
-        <p>Shadow Tours &copy; 2019.</p>
-      </div>
-    </footer>
+    <Footer />
   </div>
 )
 
