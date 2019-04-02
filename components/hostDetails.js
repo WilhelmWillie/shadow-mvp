@@ -38,7 +38,13 @@ const HostDetails = (props) => (
       </div>
 
       <footer className="card-footer">
-        <a href="#" className="card-footer-item">Book Now</a>
+        <a
+          className="card-footer-item"
+          onClick={() => {
+            props.selectHost(props.host)
+          }}>
+          Book Now
+        </a>
       </footer>
     </div>
   </div>
