@@ -17,10 +17,14 @@ class Book extends Component {
 
     this.state = {
       modalActive: false,
-      selectedHost: Hosts[0]
+      selectedHost: Hosts[0],
+      filter: {
+        major: undefined,
+        class: undefined,
+        onlyGreek: 0,
+        onlyInternational: 0
+      }
     }
-
-    console.log(process.env.NODE_ENV)
   }
 
   selectHost = (host) => {
@@ -36,10 +40,97 @@ class Book extends Component {
     })
   }
 
+  filterMajor = (event) => {
+    const value = event.target.value
+    const filter = this.state.filter
+
+    if (value === '') {
+      filter.major = undefined;
+    } else {
+      filter.major = value;
+    }
+
+    this.setState({
+      filter
+    })
+  }
+
+  filterClass = (event) => {
+    const value = event.target.value
+    const filter = this.state.filter
+
+    if (value === '') {
+      filter.class = undefined;
+    } else {
+      filter.class = value;
+    }
+
+    this.setState({
+      filter
+    })
+  }
+
+  toggleGreek = () => {
+    const filter = this.state.filter
+    filter.onlyGreek = !filter.onlyGreek
+    this.setState({filter})
+  }
+
+  toggleInternational = () => {
+    const filter = this.state.filter
+    filter.onlyInternational = !filter.onlyInternational
+    this.setState({filter})
+  }
+
+  resetFilters = () => {
+    this.setState({
+      filter: {
+        major: undefined,
+        class: undefined,
+        onlyGreek: 0,
+        onlyInternational: 0
+      }
+    })
+  }
+
   render() {
-    const hostDetails = Hosts.map((host) => (
+    const filter = this.state.filter
+    const filteredHosts = Hosts.filter((host) => {
+      let majorMatch = true
+      if (filter.major !== undefined) {
+        majorMatch = (host.major === filter.major)
+      }
+
+      let classMatch = true
+      if (filter.class !== undefined) {
+        classMatch = (host.class === filter.class)
+      }
+
+      let greekMatch = true
+      if (filter.onlyGreek) {
+        greekMatch = (host.details.greek) ?  (1) : (0)
+      }
+
+      let internationalMatch = true
+      if (filter.onlyInternational) {
+        internationalMatch = (host.details.international) ?  (1) : (0)
+      }
+
+      return (majorMatch && classMatch && greekMatch && internationalMatch)
+    })
+
+    const hostDetails = filteredHosts.map((host) => (
       <HostDetails host={host} selectHost={this.selectHost} />
     ))
+
+    const greekFilterClass = (this.state.filter.onlyGreek) ? ('button is-success') : ('button')
+    const internationalFilterClass = this.state.filter.onlyInternational ? ('button is-success') : ('button')
+    const resetFilterClass = (
+      this.state.filter.major !== undefined ||
+      this.state.filter.class !== undefined ||
+      this.state.filter.onlyGreek ||
+      this.state.filter.onlyInternational
+    ) ? ('button is-info') : ('button')
 
     return (
       <>
@@ -54,26 +145,23 @@ class Book extends Component {
             </div>
           </div>
 
-          <div className="filter columns is-vcentered">
-            <div className="field column">
-              <label className="label">Major</label>
-
+          <div className="filter columns">
+            <div className="field column has-text-centered">
               <div className="select">
-                <select>
-                  <option>Filter by Major</option>
+                <select onChange={this.filterMajor} value={filter.major}>
+                  <option value="">Filter by Major</option>
+                  <option>Art</option>
                   <option>Business Administration</option>
+                  <option>Communications</option>
                   <option>Computer Science</option>
-                  <option>Art and Design</option>
                 </select>
               </div>
             </div>
 
-            <div className="field column">
-              <label className="label">Class</label>
-
+            <div className="field column has-text-centered">
               <div className="select">
-                <select>
-                  <option>Filter by Class</option>
+                <select onChange={this.filterClass} value={filter.class}>
+                  <option value="">Filter by Class</option>
                   <option>Senior</option>
                   <option>Junior</option>
                   <option>Sophomore</option>
@@ -81,20 +169,16 @@ class Book extends Component {
               </div>
             </div>
 
-            <div className="field column">
-              <div className="control">
-                <label className="checkbox">
-                  <input type="checkbox"/> Greek
-                </label>
-              </div>
+            <div className="field column has-text-centered">
+              <button className={greekFilterClass} onClick={this.toggleGreek}>Only Greek</button>
             </div>
 
-            <div className="field column">
-              <div className="control">
-                <label className="checkbox">
-                  <input type="checkbox"/> International
-                </label>
-              </div>
+            <div className="field column has-text-centered">
+              <button className={internationalFilterClass} onClick={this.toggleInternational}>Only International</button>
+            </div>
+
+            <div className="field column has-text-centered">
+              <button className={resetFilterClass} onClick={this.resetFilters}>Reset Filters</button>
             </div>
           </div>
 

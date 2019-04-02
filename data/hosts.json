@@ -5,7 +5,7 @@
     "name": "Sam Tate",
     "major": "Business Administration",
     "hometown": "Los Angeles, CA",
-    "class": "Junior",
+    "class": "Senior",
     "details": {
       "minor": "Digital Entrepreneurship",
       "involvements": "SparkSC, LavaLab, TCG, LACI",
@@ -17,6 +17,7 @@
         "twitter": "jack"
       },
       "greek": true,
+      "international": false,
       "biography": "Lorem ipsum solor amet consectetur adipiscing elit."
     }
   },
@@ -24,7 +25,7 @@
     "id": 1,
     "email": "vice@usc.edu",
     "name": "Hailey Vice",
-    "major": "Business Administration",
+    "major": "Art",
     "hometown": "Los Angeles, CA",
     "class": "Junior",
     "details": {
@@ -38,6 +39,7 @@
         "twitter": "jack"
       },
       "greek": true,
+      "international": false,
       "biography": "Lorem ipsum solor amet consectetur adipiscing elit."
     }
   },
@@ -45,7 +47,7 @@
     "id": 2,
     "email": "wwillie@usc.edu",
     "name": "Wilhelm Willie",
-    "major": "Business Administration",
+    "major": "Computer Science",
     "hometown": "Los Angeles, CA",
     "class": "Junior",
     "details": {
@@ -59,14 +61,15 @@
         "twitter": "jack"
       },
       "greek": true,
+      "international": false,
       "biography": "Lorem ipsum solor amet consectetur adipiscing elit."
     }
   },
   {
     "id": 3,
-    "email": "kelliny@usc.edu",
+    "email": "ckelliny@usc.edu",
     "name": "Chris Kelliny",
-    "major": "Business Administration",
+    "major": "Communications",
     "hometown": "Los Angeles, CA",
     "class": "Junior",
     "details": {
@@ -80,12 +83,13 @@
         "twitter": "jack"
       },
       "greek": true,
+      "international": false,
       "biography": "Lorem ipsum solor amet consectetur adipiscing elit."
     }
   },
   {
     "id": 4,
-    "email": "yashar@usc.edu",
+    "email": "ykutay@usc.edu",
     "name": "Yashar Kutay",
     "major": "Business Administration",
     "hometown": "Los Angeles, CA",
@@ -100,19 +104,20 @@
         "linkedin": "test",
         "twitter": "jack"
       },
-      "greek": true,
+      "greek": false,
+      "international": true,
       "biography": "Lorem ipsum solor amet consectetur adipiscing elit."
     }
   },
   {
     "id": 5,
-    "email": "majed@usc.edu",
+    "email": "jendi@usc.edu",
     "name": "Majed Jendi",
-    "major": "Business Administration",
+    "major": "Computer Science",
     "hometown": "Los Angeles, CA",
-    "class": "Junior",
+    "class": "Sophomore",
     "details": {
-      "minor": "Digital Entrepreneurship",
+      "minor": "N/A",
       "involvements": "SparkSC, LavaLab, TCG, LACI",
       "interests": ["Surfing", "USC Sports", "Traveling", "Finance", "UI/UX Design"],
       "dreamJob": "Venture Capital",
@@ -121,7 +126,8 @@
         "linkedin": "test",
         "twitter": "jack"
       },
-      "greek": true,
+      "greek": false,
+      "international": true,
       "biography": "Lorem ipsum solor amet consectetur adipiscing elit."
     }
   }
