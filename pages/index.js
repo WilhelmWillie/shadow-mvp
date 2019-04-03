@@ -7,7 +7,7 @@ import Footer from '../components/footer'
 
 const Index = () => (
   <div>
-    <Head title="Shadow - Experience what it is really like to be a college student" />
+    <Head title="Shadow - Experience what it's really like to be a college student" />
 
     <Hero />
 
@@ -31,23 +31,7 @@ const Index = () => (
         </div>
       </div>
     </section>
-
-    <section className="section">
-      <div className="container">
-        <h2 className="title has-text-centered"><b>Featured Hosts</b></h2>
-
-        <div className="columns">
-          <div className="column">
-            Featured host goes here
-          </div>
-
-          <div className="column">
-            Featured host goes here
-          </div>
-        </div>
-      </div>
-    </section>
-
+    
     <Footer />
   </div>
 )

@@ -29,6 +29,8 @@ class Book extends Component {
   }
 
   selectHost = (host) => {
+    document.querySelector('body').classList.add('modal-active')
+
     this.setState({
       modalActive: true,
       selectedHost: host
@@ -36,6 +38,8 @@ class Book extends Component {
   }
 
   toggleModal = () => {
+    document.querySelector('body').classList.remove('modal-active')
+
     this.setState({
       modalActive: !this.state.modalActive
     })
@@ -141,7 +145,7 @@ class Book extends Component {
         <div className="container">
           <div className="card">
             <div className="card-content tour-details">
-              <h1 className="title">Your Tour</h1>
+              <h1 className="title">Your USC Tour</h1>
               <h2 className="subtitle">Monday, April 28, 2019 at 2:00 PM</h2>
             </div>
           </div>
@@ -151,10 +155,11 @@ class Book extends Component {
               <div className="select">
                 <select onChange={this.filterMajor} value={filter.major}>
                   <option value="">Filter by Major</option>
-                  <option>Art</option>
                   <option>Business Administration</option>
                   <option>Communications</option>
-                  <option>Computer Science</option>
+                  <option>Computer Engineering</option>
+                  <option>CS and Business</option>
+                  <option>Design</option>
                 </select>
               </div>
             </div>

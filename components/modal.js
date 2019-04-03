@@ -14,26 +14,63 @@ const Modal = (props) => {
           <button className="delete" aria-label="close" onClick={props.toggleModal}></button>
         </header>
         <section className="modal-card-body">
-          <p>
-            <span className="icon">
-              <i className="fas fa-graduation-cap"></i>
-            </span>
-            {host.class}
-          </p>
+          <div className="columns">
+            <div className="column">
+              <figure className="image is-4by3">
+                <img src={host.photo} alt={host.name} style = {{objectFit: 'cover'}}/>
+              </figure>
+            </div>
 
-          <p>
-            <span className="icon">
-              <i className="fas fa-book"></i>
-            </span>
-            {host.major} (Minor: {host.details.minor})
-          </p>
+            <div className="column">
+              <p>
+                <b>
+                  <span className="icon">
+                    <i className="fas fa-graduation-cap"></i>
+                  </span>
 
-          <p>
-            <span className="icon">
-              <i className="fas fa-home"></i>
-            </span>
-            {host.hometown}
-          </p>
+                  Class
+                </b> <br/>
+
+                {host.class}
+              </p>
+
+              <p>
+                <b>
+                  <span className="icon">
+                    <i className="fas fa-book"></i>
+                  </span>
+
+                  Major
+                </b> <br/>
+
+                {host.major}
+              </p>
+
+              <p>
+                <b>
+                  <span className="icon">
+                    <i className="fas fa-chalkboard"></i>
+                  </span>
+
+                  Minor
+                </b> <br/>
+
+                {host.details.minor}
+              </p>
+
+              <p>
+                <b>
+                  <span className="icon">
+                    <i className="fas fa-home"></i>
+                  </span>
+
+                  Hometown
+                </b> <br/>
+
+                {host.hometown}
+              </p>
+            </div>
+          </div>
 
           <hr/>
 
@@ -47,6 +84,10 @@ const Modal = (props) => {
 
           <p>
             <b>Interests: </b> {interests}
+          </p>
+
+          <p>
+            <b>Dream Job: </b> {host.details.dreamJob}
           </p>
 
           <p>

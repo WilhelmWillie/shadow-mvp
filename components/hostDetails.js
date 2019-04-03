@@ -3,7 +3,7 @@ const HostDetails = (props) => (
     <div className="card">
       <div className="card-image">
         <figure className="image is-4by3">
-          <img src="//placehold.it/640x480" alt="Placeholder image" />
+          <img src={props.host.photo} alt="Placeholder image" style = {{objectFit: 'cover'}}/>
         </figure>
       </div>
 

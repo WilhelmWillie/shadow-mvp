@@ -1,3 +1,5 @@
+import '../styles/navbar.scss'
+
 import Link from 'next/link'
 
 const NavBar = () => (
@@ -18,11 +20,11 @@ const NavBar = () => (
       <div id="navbarBasicExample" className="navbar-menu">
         <div className="navbar-end">
           <div className="navbar-item">
-            <Link href="/about">About</Link>
+            <Link href="#">About</Link>
           </div>
 
           <div className="navbar-item">
-            <Link href="/host"><button className="button is-dark">Host a Tour</button></Link>
+            <Link href="#"><button className="button is-dark">Host a Tour</button></Link>
           </div>
         </div>
       </div>

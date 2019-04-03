@@ -62,10 +62,9 @@ class Find extends Component {
                   <div className="select">
                     <select value={this.state.school} onChange={this.selectSchool}>
                       <option value="usc">University of Southern California</option>
-                      <option value="unavailable">UCLA (Coming Soon)</option>
-                      <option value="unavailable">UCSD (Coming Soon)</option>
-                      <option value="unavailable">Stanford (Coming Soon)</option>
-                      <option value="unavailable">Berkeley (Coming Soon)</option>
+                      <option value="ucla">UCLA (Coming Soon)</option>
+                      <option value="stanford">Stanford (Coming Soon)</option>
+                      <option value="berkeley">Berkeley (Coming Soon)</option>
                     </select>
                   </div>
                 </div>

@@ -7,3 +7,7 @@
 
 // Import Bulma, a CSS framework
 @import '~bulma/bulma';
+
+.modal-active {
+  overflow: hidden;
+}

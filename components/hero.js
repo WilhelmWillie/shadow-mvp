@@ -16,10 +16,9 @@ const Hero = () => (
         <div className="columns is-vcentered">
           <div className="column">
             <h1 className="title">
-              Shadow
+              Real students.<br/>Real voices.<br/>Real experiences.
             </h1>
             <h2 className="subtitle">
-              <b>Real students. Real voices. Real experiences.</b> <br/>
               Experience what it's really like to be a college student.
             </h2>
 
