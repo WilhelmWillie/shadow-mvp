@@ -146,7 +146,7 @@ class Book extends Component {
           <div className="card">
             <div className="card-content tour-details">
               <h1 className="title">Your USC Tour</h1>
-              <h2 className="subtitle">Monday, April 28, 2019 at 2:00 PM</h2>
+              <h2 className="subtitle">Pick a host for your personalized USC tour!</h2>
             </div>
           </div>
 
