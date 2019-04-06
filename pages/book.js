@@ -43,7 +43,6 @@ const Book = () => {
           <div className="notification is-success">
             <strong>Limited Time Offer! </strong>
 
-
             For a limited time, book one of our hosts for a 100% discount. Book a personalized, custom tour now!
           </div>
         </div>

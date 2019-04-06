@@ -76,7 +76,7 @@ const Host = (props) => (
       </div>
 
       <div className="column is-one-fifth has-text-centered">
-        <Link href="/details?host=willie">
+        <Link href={`/details?host=${props.host.id}`}>
           <button className="button is-large is-primary host-meet-button">Meet {props.host.nickname}</button>
         </Link>
 
