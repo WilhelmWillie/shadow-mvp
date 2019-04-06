@@ -44,7 +44,7 @@ const Details = (props) => {
 
               <hr/>
 
-              <form method="POST" data-netlify="true" name="tour-signup">
+              <form method="POST" action={`/details?host={host.id}`} data-netlify="true" name="tour-signup">
                 <div className="field">
                   <label className="label">Name</label>
                   <input id="fullName" name="fullName" className="input" placeholder="Name"/>
