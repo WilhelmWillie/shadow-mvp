@@ -60,6 +60,8 @@ const Details = (props) => {
                   <textarea id="aboutYou" name="aboutYou" className="textarea" rows="3" placeholder="Tell us about yourself!"></textarea>
                 </div>
 
+                <input type="hidden" name="form-name" value="tour-signup" /> 
+
                 <div className="field">
                   <input type="submit" class="button is-primary" value="Contact Host!" />
                 </div>

@@ -36,6 +36,8 @@ const HostSignup = () => (
                   <input id="emailAddress" name="emailAddress" className="input" placeholder= "Email Address"/>
                 </div>
 
+                <input type="hidden" name="form-name" value="host-signup" />  
+
                 <div className="field">
                   <input type="submit" class="button is-dark" value="Sign Up!" />
                 </div>
