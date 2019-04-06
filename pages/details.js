@@ -16,7 +16,7 @@ const Details = (props) => {
 
   return (
     <div>
-      <Head title="Shadow - Experience what it's really like to be a college student" />
+      <Head title={"Shadow - " + host.name }/>
 
       <NavBar />
 

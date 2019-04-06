@@ -13,13 +13,13 @@ const Host = (props) => (
         </figure>
       </div>
 
-      <div className="column">
+      <div className="column is-hidden-mobile">
         <figure className="image is-4by3 host-photo">
           <img src={`/static/hosts/${props.host.id}/b.jpg`} />
         </figure>
       </div>
 
-      <div className="column">
+      <div className="column is-hidden-mobile">
         <figure className="image is-4by3 host-photo">
           <img src={`/static/hosts/${props.host.id}/c.jpg`} />
         </figure>

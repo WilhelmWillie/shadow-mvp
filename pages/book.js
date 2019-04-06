@@ -18,7 +18,7 @@ const Book = () => {
 
   return (
     <div>
-      <Head title="Shadow - Experience what it's really like to be a college student" />
+      <Head title="Shadow - Book a Tour" />
 
       <NavBar />
 
