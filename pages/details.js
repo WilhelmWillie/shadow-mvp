@@ -44,7 +44,7 @@ const Details = (props) => {
 
               <hr/>
 
-              <form action="/success" netlify-honeypot="bot-field" method="GET" data-netlify="true" name="tour-signup">
+              <form action="/success" netlify-honeypot="bot-field" method="GET" data-netlify="true" netlify name="tour-signup">
                 <p className="hidden">
                   <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
                   <input name="host-name" value={host.name} />

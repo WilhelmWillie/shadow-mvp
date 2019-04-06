@@ -26,7 +26,7 @@ const HostSignup = (props) => {
                   Join the team at Shadow and help show prospective students the real college experience. Set your own schedule, engage in personal conversations, and get paid for your time!
                 </p>
 
-                <form action="/success" method="GET" data-netlify="true" name="host-signup">
+                <form action="/success" netlify method="GET" data-netlify="true" name="host-signup">
                   <div className="field">
                     <label className="label has-text-white">Name</label>
                     <input id="fullName" name="fullName" className="input" placeholder="Name"/>

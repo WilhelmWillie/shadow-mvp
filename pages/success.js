@@ -10,7 +10,7 @@ import Link from 'next/link'
 
 const About = () => (
   <div>
-    <Head title="Shadow - About Us" />
+    <Head title="Shadow - Success" />
 
     <NavBar />
 
