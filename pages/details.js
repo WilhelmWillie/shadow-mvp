@@ -9,8 +9,10 @@ import Footer from '../components/footer'
 
 import HostData from '../data/hosts.json'
 
+import Router from 'next/router'
+
 const Details = (props) => {
-  const host = HostData[props.url.query.host]
+  const host = HostData[props.url.query.host || 'sam']
 
   return (
     <div>
