@@ -37,8 +37,8 @@ const HostSignup = (props) => {
                 </p>
 
                 {successMessage}
-                
-                <form action="/host?success" method="POST" data-netlify="true" name="host-signup">
+
+                <form action="/host?success=true" method="POST" data-netlify="true" name="host-signup">
                   <div className="field">
                     <label className="label has-text-white">Name</label>
                     <input id="fullName" name="fullName" className="input" placeholder="Name"/>
