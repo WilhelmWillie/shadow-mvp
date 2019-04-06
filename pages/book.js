@@ -48,7 +48,7 @@ const Book = () => {
         </div>
       </section>
 
-      <section>
+      <section className="section" style={{paddingTop: 0}}>
         <div className="container">
           {hosts}
         </div>
