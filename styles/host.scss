@@ -1,0 +1,51 @@
+// Styles for Host
+.host {
+  border-top: 2px solid #BABABA;
+  padding: 3rem 0;
+
+  .headline {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+
+  .host-details {
+    font-size: 1.25rem;
+    padding: 0.5rem 0;
+    border-top: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+    margin: 0.5rem 0 1.5rem;
+
+    .icon {
+      margin-right: 0.5rem;
+    }
+  }
+
+  .host-bio {
+    font-size: 1.25rem;
+  }
+
+  .host-photo img {
+    object-fit: cover;
+  }
+
+  .host-meet-button {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .host-price {
+    font-size: 1.1rem;
+    padding-top: 0.5rem;
+    font-weight: bold;
+    color: darkgreen;
+
+    .host-price-strike {
+      text-decoration: line-through;
+    }
+  }
+
+  &:first-child {
+    border-top: 0;
+    padding-top: 0;
+  }
+}

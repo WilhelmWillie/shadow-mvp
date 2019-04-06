@@ -2,20 +2,6 @@ import '../styles/navbar.scss'
 
 import Link from 'next/link'
 
-/*
-<div id="navbarBasicExample" className="navbar-menu">
-  <div className="navbar-end">
-    <div className="navbar-item">
-      <Link href="#">About</Link>
-    </div>
-
-    <div className="navbar-item">
-      <Link href="#"><button className="button is-dark">Host a Tour</button></Link>
-    </div>
-  </div>
-</div>
-*/
-
 const NavBar = () => (
   <nav className="navbar" role="navigation" aria-label="main navigation">
     <div className="container">
@@ -23,12 +9,18 @@ const NavBar = () => (
         <a className="navbar-item" href="/">
           <img src="/static/shadow.png" alt="Shadow"/>
         </a>
+      </div>
 
-        <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
+      <div className="navbar-menu">
+        <div className="navbar-end">
+          <div className="navbar-item">
+            <Link href="/about">About</Link>
+          </div>
+
+          <div className="navbar-item">
+            <Link href="/host"><button className="button is-dark">Become a Host</button></Link>
+          </div>
+        </div>
       </div>
     </div>
   </nav>

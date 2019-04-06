@@ -16,14 +16,14 @@ const Hero = () => (
         <div className="columns is-vcentered">
           <div className="column">
             <h1 className="title">
-              Real students.<br/>Real voices.<br/>Real experiences.
+              Real students. Real voices. Real experiences.
             </h1>
             <h2 className="subtitle">
               Experience what it's really like to be a college student.
             </h2>
 
-            <Link href="/tour/find">
-              <button className="button is-dark is-medium">Take a Tour</button>
+            <Link href="/book">
+              <button className="button is-primary is-medium">Book a Tour</button>
             </Link>
           </div>
 

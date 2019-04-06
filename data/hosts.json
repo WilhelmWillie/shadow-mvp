@@ -1,141 +1,80 @@
-[
-  {
-    "id": 0,
-    "email": "tate@usc.edu",
+{
+  "sam": {
     "name": "Sam Tate",
-    "photo": "/static/hosts/sam.jpg",
-    "major": "Business Administration",
-    "hometown": "Los Angeles, CA",
-    "class": "Senior",
+    "nickname": "Sam",
+    "id": "sam",
+    "headline": "Sam: Get to know what it’s really like to be a business student at USC",
+    "bio": "I was born and raised in the Boston area but always knew I wanted to come to California for college. USC was always my dream school and it has been an amazing experience. I’m really interested in entrepreneurship, finance, and venture capital and am currently working on my own startup.",
     "details": {
-      "minor": "Digital Entrepreneurship",
-      "involvements": "USC Club Baseball",
-      "interests": ["Surfing", "USC Sports", "Traveling", "Finance", "UI/UX Design"],
-      "dreamJob": "Entrepreneur / Venture Capital",
-      "experience": ["WSL Finance Intern", "DDJ Capital Management Finance Intern"],
-      "social": {
-        "linkedin": "https://www.linkedin.com/in/samuel-tate-usc/",
-        "twitter": "https://www.instagram.com/sam_tate97/"
-      },
-      "greek": true,
-      "house": "Pi Kappa Alpha",
-      "international": false,
-      "biography": "I was born and raised in the Boston area but always knew I wanted to come to California for college. USC was always my dream school and it has been an amazing experience. I am really interested in entrepreneurship and am currently working on my own startup."
+      "university": "USC",
+      "major": "Business Administration",
+      "class": "Senior",
+      "hometown": "Lexington, MA"
     }
   },
-  {
-    "id": 1,
-    "email": "vice@usc.edu",
-    "name": "Hailey Vice",
-    "photo": "/static/hosts/vice.jpg",
-    "major": "Design",
-    "hometown": "Satellite Beach, FL",
-    "class": "Junior",
-    "details": {
-      "minor": "Digital Entrepreneurship",
-      "involvements": "LavaLab, Roski Magazine, Young Americans for Freedom",
-      "interests": ["Travelling", "Volleyball", "UI/UX Design", "Product and App ideation", "Entrepreneurship"],
-      "dreamJob": "Executive at my Own Company",
-      "experience": ["Applied Minds for Two Summers", "Design and Marketing for Real Estate Firm"],
-      "social": {
-      },
-      "greek": true,
-      "house": "Alpha Delta Pi",
-      "international": false,
-      "biography": "Lorem ipsum solor amet consectetur adipiscing elit."
-    }
-  },
-  {
-    "id": 2,
-    "email": "wwillie@usc.edu",
+  "willie": {
     "name": "Wilhelm Willie",
-    "photo": "/static/hosts/willie.jpg",
-    "major": "CS and Business",
-    "hometown": "Jacksonville, FL",
-    "class": "Junior",
+    "nickname": "Willie",
+    "id": "willie",
+    "headline": "Willie: Learn more about USC's tech community, internship opportunities, and social scene",
+    "bio": "During my time at USC, I've been involved with several organizations such as LavaLab, Code the Change, Scope, and HackSC. In the summers, I've worked internships at companies like McKinsey & Company, Salesforce, and Coinbase. In addition, I've been involved with my social fraternity, Sigma Alpha Mu, for 3 years and have enjoyed balancing my involvement in tech and the Greek social scene",
     "details": {
-      "minor": "Digital Entrepreneurship",
-      "involvements": "HackSC, Code the Change, Scope, LavaLab, Sammy",
-      "interests": ["Photography", "Coding", "Dance", "Guitar", "UX/UI Design"],
-      "dreamJob": "Chief Technology Officer",
-      "experience": ["Summer Digital Analyst @ McKinsey", "Software Engineering Intern @ Salesforce", "Incoming Software Engineering Intern @ Coinbase"],
-      "social": {
-        "linkedin": "https://linkedin.com/in/wilhelmwillie"
-      },
-      "greek": true,
-      "house": "Sigma Alpha Mu",
-      "international": false,
-      "biography": "I’m Wilhelm Willie (call me Willie). I’m a Junior at USC studying CS and business with interests in entrepreneurship, technology, UX, and product development. I’m deeply involved with USC’s tech community as I’m a Product Manager for Code the Change, an organizer for HackSC, a former e-board member of Scope, and a former developer with LavaLab. Outside of my tech involvements, I also enjoy photography, dancing, playing the guitar, and being involved with my social fraternity"
+      "university": "USC",
+      "major": "CS and Business",
+      "class": "Junior",
+      "hometown": "Jacksonville, FL"
     }
   },
-  {
-    "id": 3,
-    "email": "ckelliny@usc.edu",
-    "name": "Chris Kelliny",
-    "photo": "/static/hosts/chris.jpg",
-    "major": "Communications",
-    "hometown": "Palos Verdes, CA",
-    "class": "Junior",
-    "details": {
-      "minor": "Digital Entrepreneurship & Music Industry",
-      "involvements": "Concerts Committee",
-      "interests": ["Football", "Lacrosse", "Video Games", "Music"],
-      "dreamJob": "Creative Director for Universal Music Group",
-      "experience": ["Operations Intern @ Livexlive"],
-      "social": {
-        "linkedin": "test",
-        "twitter": "jack"
-      },
-      "greek": true,
-      "house": "Phi Kappa Psi",
-      "international": false,
-      "biography": "Lorem ipsum solor amet consectetur adipiscing elit."
-    }
-  },
-  {
-    "id": 4,
-    "email": "ykutay@usc.edu",
+  "yashar": {
     "name": "Yashar Kutay",
-    "photo": "/static/hosts/yashar.jpeg",
-    "major": "Business Administration",
-    "hometown": "Los Angeles, CA",
-    "class": "Senior",
+    "nickname": "Yashar",
+    "id": "yashar",
+    "headline": "Yashar: Hear about my international student experience and my time with USC's Greek Life",
+    "bio": "I'm Yashar, an international student from London. I'm deeply interested in entrepreneurship and have had experience working with startups. I'd love to talk to international students interested in exploring entrepreneurship opportunities at USC. I'm also a big soccer, tennis, and golf fan and am involved with USC's Greek Life.",
     "details": {
-      "minor": "Digital Entrepreneurship",
-      "involvements": "SparkSC, LavaLab, TCG, LACI",
-      "interests": ["Soccer", "Tennis", "Golf"],
-      "dreamJob": "CEO of Liverpool Football",
-      "experience": ["Snupps (mobile application)", "Zaha Hadid Architects", "Drone MVP (startup)"],
-      "social": {
-        "linkedin": "https://www.linkedin.com/in/yashar-kutay-957a01a8/"
-      },
-      "greek": true,
-      "house": "Lambda Chi Alpha",
-      "international": true,
-      "biography": "Hi, I’m Yashar. I was born and raised in London and moved to LA to go to USC. I would love to give international students a closer look at USC. I have had a fair amount of experience working at startups and as an ITP (Digital Entrepreneurship) minor student, I would love to show people more about the program."
+      "university": "USC",
+      "major": "Business Administration",
+      "class": "Senior",
+      "hometown": "London, United Kingdom"
     }
   },
-  {
-    "id": 5,
-    "email": "jendi@usc.edu",
+  "majed": {
     "name": "Majed Jendi",
-    "photo": "/static/hosts/majed.JPG",
-    "major": "Computer Engineering",
-    "hometown": "Jeddah, Saudi Arabia",
-    "class": "Junior",
+    "nickname": "Majed",
+    "id": "majed",
+    "headline": "Majed: Learn about my experiences as an international transfer engineering student",
+    "bio": "I'm an international student studying Computer Engineering at USC. I transferred into USC last year and have enjoyed my time at USC thus far! I've enjoyed my major and would love to meet with other international and/or transfer students interested in engineering.",
     "details": {
-      "minor": "N/A",
-      "involvements": "SparkSC, LavaLab, TCG, LACI",
-      "interests": ["Travelling", "Soccer", "Tennis"],
-      "dreamJob": "Microsoft Hardware Engineer",
-      "experience": ["N/A"],
-      "social": {
-        "linkedin": "https://linkedin.com/in/majed-jendi-593594133/"
-      },
-      "greek": false,
-      "house": "n/a",
-      "international": true,
-      "biography": "I would love to introduce incoming students to the USC campus, and show them the pros and cons of the being a Viterbi student. If you want to see the campus from the perspective of an international student"
+      "university": "USC",
+      "major": "Computer Engineering",
+      "class": "Junior",
+      "hometown": "Jeddah, Saudi Arabia"
+    }
+  },
+  "hailey": {
+    "name": "Hailey Vice",
+    "nickname": "Hailey",
+    "id": "hailey",
+    "headline": "Hailey: Experience sorority life and learn about USC's design and entrepreneurship opportunities",
+    "bio": "I'm Hailey Vice! I'm a Junior studying Design and Digital Entrepreneurship. At USC, I'm involved with my sorority, Alpha Delta Pi, and have spent time exploring design, art, and entrepreneurship opportunities. Meet with me to learn more about USC's greek life and USC's Roski School of Art and Design!",
+    "details": {
+      "university": "USC",
+      "major": "Design",
+      "class": "Junior",
+      "hometown": "Satellite Beach, FL"
+    }
+  },
+  "chris": {
+    "name": "Chris Kelliny",
+    "nickname": "Chris",
+    "id": "chris",
+    "headline": "Chris: Let's talk about music, entrepreneurship, and USC Greek Life",
+    "bio": "Hey there, I'm Chris. I'm from Palos Verdes, CA and am a Junior studying Communications. I'm deeply interested in the intersection of entrepreneurship and the music industry and would love to talk to students interested in Communications, Music, and/or Entrepreneurship. In addition, I'm involved with USC's Greek Life and can showcase what USC's social scene has to offer.",
+    "details": {
+      "university": "USC",
+      "major": "Communications",
+      "class": "Junior",
+      "hometown":  "Palos Verdes, CA"
     }
   }
-]
+}
