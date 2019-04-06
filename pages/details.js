@@ -44,7 +44,12 @@ const Details = (props) => {
 
               <hr/>
 
-              <form action='/success' method="GET" data-netlify="true" name="tour-signup">
+              <form action="/success" netlify-honeypot="bot-field" method="GET" data-netlify="true" name="tour-signup">
+                <p className="hidden">
+                  <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                  <input name="host-name" value={host.name} />
+                </p>
+
                 <div className="field">
                   <label className="label">Name</label>
                   <input id="fullName" name="fullName" className="input" placeholder="Name"/>
@@ -60,7 +65,6 @@ const Details = (props) => {
                   <textarea id="aboutYou" name="aboutYou" className="textarea" rows="3" placeholder="Tell us about yourself!"></textarea>
                 </div>
 
-                <input type="hidden" name="host-name" value={host.name} />
                 <input type="hidden" name="form-name" value="tour-signup" />
 
                 <div className="field">
