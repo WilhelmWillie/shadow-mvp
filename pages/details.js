@@ -54,8 +54,8 @@ const Details = (props) => {
               <hr/>
 
               {successMessage}
-              
-              <form action={`/details?host={host.id}?success=true`} data-netlify="true" name="tour-signup">
+
+              <form action={`/success`} method="GET" data-netlify="true" name="tour-signup">
                 <div className="field">
                   <label className="label">Name</label>
                   <input id="fullName" name="fullName" className="input" placeholder="Name"/>
