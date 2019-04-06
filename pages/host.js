@@ -5,49 +5,63 @@ import Head from '../components/head'
 import NavBar from '../components/navbar'
 import Footer from '../components/footer'
 
-const HostSignup = () => (
-  <>
-    <Head title="Shadow - Become a Host" />
+const HostSignup = (props) => {
+  const success = props.url.query.success
 
-    <NavBar />
+  const successMessage = (success) ? (
+    <div className="notification is-success">
+      <strong>Success! </strong>
 
-    <section className="hero is-primary is-fullheight-with-navbar">
-      <div className="hero-body">
-        <div className="container">
-          <div className="columns is-vcentered">
-            <div className="column">
-              <img src="/static/hero_img_c.svg" alt="Hosts" className="hero-img" />
-            </div>
+      We received your submission! We'll be in contact soon :)
+    </div>
+  ) : (undefined)
 
-            <div className="column is-half">
-              <h1 className="title">Become a Host</h1>
-              <p className="subtitle">
-                Join the team at Shadow and help show prospective students the real college experience. Set your own schedule, engage in personal conversations, and get paid for your time!
-              </p>
+  return (
+    <>
+      <Head title="Shadow - Become a Host" />
 
-              <form method="POST" data-netlify="true" name="host-signup">
-                <div className="field">
-                  <label className="label has-text-white">Name</label>
-                  <input id="fullName" name="fullName" className="input" placeholder="Name"/>
-                </div>
+      <NavBar />
 
-                <div className="field">
-                  <label className="label has-text-white">E-Mail Address</label>
-                  <input id="emailAddress" name="emailAddress" className="input" placeholder= "Email Address"/>
-                </div>
+      <section className="hero is-primary is-fullheight-with-navbar">
+        <div className="hero-body">
+          <div className="container">
+            <div className="columns is-vcentered">
+              <div className="column">
+                <img src="/static/hero_img_c.svg" alt="Hosts" className="hero-img" />
+              </div>
 
-                <input type="hidden" name="form-name" value="host-signup" />  
+              <div className="column is-half">
+                <h1 className="title">Become a Host</h1>
+                <p className="subtitle">
+                  Join the team at Shadow and help show prospective students the real college experience. Set your own schedule, engage in personal conversations, and get paid for your time!
+                </p>
 
-                <div className="field">
-                  <input type="submit" class="button is-dark" value="Sign Up!" />
-                </div>
-              </form>
+                {successMessage}
+                
+                <form action="/host?success" method="POST" data-netlify="true" name="host-signup">
+                  <div className="field">
+                    <label className="label has-text-white">Name</label>
+                    <input id="fullName" name="fullName" className="input" placeholder="Name"/>
+                  </div>
+
+                  <div className="field">
+                    <label className="label has-text-white">E-Mail Address</label>
+                    <input id="emailAddress" name="emailAddress" className="input" placeholder= "Email Address"/>
+                  </div>
+
+                  <input type="hidden" name="form-name" value="host-signup" />
+
+                  <div className="field">
+                    <input type="submit" class="button is-dark" value="Sign Up!" />
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </>
-)
+      </section>
+    </>
+  )
+}
 
 export default HostSignup
