@@ -14,15 +14,6 @@ import Router from 'next/router'
 const Details = (props) => {
   const host = HostData[props.url.query.host || 'sam']
 
-  const success = props.url.query.success
-  const successMessage = (success) ? (
-    <div className="notification is-success">
-      <strong>Success! </strong>
-
-      We received your submission! We'll be in contact soon :)
-    </div>
-  ) : (undefined)
-
   return (
     <div>
       <Head title={"Shadow - " + host.name }/>
@@ -53,9 +44,7 @@ const Details = (props) => {
 
               <hr/>
 
-              {successMessage}
-
-              <form action={`/success`} method="GET" data-netlify="true" name="tour-signup">
+              <form action='/success' method="GET" data-netlify="true" name="tour-signup">
                 <div className="field">
                   <label className="label">Name</label>
                   <input id="fullName" name="fullName" className="input" placeholder="Name"/>

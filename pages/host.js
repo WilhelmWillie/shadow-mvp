@@ -6,16 +6,6 @@ import NavBar from '../components/navbar'
 import Footer from '../components/footer'
 
 const HostSignup = (props) => {
-  const success = props.url.query.success
-
-  const successMessage = (success) ? (
-    <div className="notification is-success">
-      <strong>Success! </strong>
-
-      We received your submission! We'll be in contact soon :)
-    </div>
-  ) : (undefined)
-
   return (
     <>
       <Head title="Shadow - Become a Host" />
@@ -35,8 +25,6 @@ const HostSignup = (props) => {
                 <p className="subtitle">
                   Join the team at Shadow and help show prospective students the real college experience. Set your own schedule, engage in personal conversations, and get paid for your time!
                 </p>
-
-                {successMessage}
 
                 <form action="/success" method="GET" data-netlify="true" name="host-signup">
                   <div className="field">
