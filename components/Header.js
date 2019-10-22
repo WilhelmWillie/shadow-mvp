@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Button from "./Button";
 import Container from "./Container";
 
-import ShadowLogo from "../assets/shadow_logo.svg";
+import ShadowLogo from "../assets/shadow_logo.png";
 
 const Header = ({ shadowLink }) => {
   return (
