@@ -15,8 +15,8 @@ const Host = () => (
     <Head title="Shadow - Real students, real voices, real experiences" />
     <Header shadowLink />
     <SignUpHero
-      title="Sign up to host tours, via Shadow"
-      subtitle="Enter in your e-mail so our Shadow team can reach out to you as a prospective host."
+      title="Become a host and earn some cash"
+      subtitle="Turn your knowledge of your school into a side hustle. Enter in your e-mail so we can get you set up as a Shadow host"
     />
     <Benefits />
     <Process />
