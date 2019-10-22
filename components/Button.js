@@ -9,10 +9,28 @@ const Button = styled.button`
   border: none;
   transition: 0.25s background;
   cursor: pointer;
+  text-decoration: none;
 
   &:hover {
     background: #989dd8;
   }
+
+  ${({ small }) =>
+    small &&
+    `
+      padding: 14px 24px;
+      font-size: 14px;
+    `}
+
+  ${({ darker }) =>
+    darker &&
+    `
+      background: #5D629F;
+
+      &:hover {
+        background: #434888;
+      }
+    `}
 `;
 
 export default Button;

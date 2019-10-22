@@ -21,7 +21,9 @@ const Hero = () => (
           <Subtitle>
             Experience what it's really like to be a college student.
           </Subtitle>
-          <Button>Sign Up For A Tour</Button>
+          <Button as="a" href="/shadow">
+            Sign Up For A Tour
+          </Button>
         </ScrollAnimation>
       </Content>
       <Graphic>

@@ -3,24 +3,25 @@ import "animate.css/animate.min.css";
 
 import {
   Benefits,
-  CTA,
   Footer,
   Head,
   Header,
-  Hero,
-  Process
-} from "../components";
+  Process,
+  SignUpHero
+} from "../../components";
 
-const Landing = () => (
+const Shadow = () => (
   <>
     <Head title="Shadow - Real students, real voices, real experiences" />
     <Header />
-    <Hero />
+    <SignUpHero
+      title="Sign up for a tour, via Shadow"
+      subtitle="Enter in your e-mail so our Shadow team can reach out to you and find you a match."
+    />
     <Benefits />
     <Process />
-    <CTA />
     <Footer />
   </>
 );
 
-export default Landing;
+export default Shadow;
