@@ -61,6 +61,14 @@ const Email = styled.div`
     padding: 18px 32px;
     font-size: 18px;
     color: #818181;
+
+    @media screen and (max-width: 768px) {
+      margin: 0 0 16px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
   }
 `;
 

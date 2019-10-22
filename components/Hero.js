@@ -43,10 +43,17 @@ const HeroWrapper = styled.div`
 const HeroContainer = styled(Container)`
   position: relative;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const Content = styled.div`
   width: 45%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const HeroTitle = styled.h1`
@@ -66,6 +73,12 @@ const Graphic = styled.div`
   position: absolute;
   right: 0;
   z-index: -1;
+
+  @media screen and (max-width: 768px) {
+    position: relative;
+    width: 100%;
+    margin-top: 64px;
+  }
 `;
 
 const GraduationGraphicImg = styled.img`

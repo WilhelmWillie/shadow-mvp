@@ -11,13 +11,13 @@ const CTA = () => (
 
       <Options>
         <Button as="a" href="/shadow">
-          Sign Up For A Tour
+          Sign Up for a Tour
         </Button>
 
         <span>OR</span>
 
         <Button as="a" href="/host">
-          Sign Up As A Host
+          Become a Host
         </Button>
       </Options>
     </CTAWrapper>
@@ -46,6 +46,15 @@ const Options = styled.div`
   width: 60%;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    flex-direction: column;
+
+    span {
+      margin: 18px 0;
+    }
+  }
 `;
 
 export default CTA;

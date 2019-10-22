@@ -29,7 +29,7 @@ const Process = () => (
       </ScrollAnimation>
 
       <ScrollAnimation animateIn="fadeIn">
-        <Step>
+        <Step reverse>
           <StepImage src={Diary} />
 
           <StepContent>
@@ -59,7 +59,7 @@ const Process = () => (
       </ScrollAnimation>
 
       <ScrollAnimation animateIn="fadeIn">
-        <Step>
+        <Step reverse>
           <StepImage src={Campus} />
 
           <StepContent>
@@ -92,6 +92,13 @@ const Step = styled.div`
   display: flex;
   align-items: center;
   padding: 64px 0 0;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    flex-direction: column;
+
+    ${({ reverse }) => reverse && "flex-direction: column-reverse"};
+  }
 `;
 
 const StepContent = styled.div`
@@ -111,6 +118,10 @@ const StepImage = styled.img`
   width: 40%;
   margin-left: 48px;
   margin-right: 48px;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export default Process;

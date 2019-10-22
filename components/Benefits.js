@@ -65,6 +65,10 @@ const BenefitColumns = styled.div`
   display: flex;
   padding-top: 48px;
   justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const BenefitColumn = styled.div`
@@ -81,6 +85,11 @@ const BenefitColumn = styled.div`
     color: rgba(255, 255, 255, 0.75);
     line-height: 24px;
     text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-basis: 100%;
+    margin-top: 24px;
   }
 `;
 
