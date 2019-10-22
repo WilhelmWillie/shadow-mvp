@@ -17,6 +17,7 @@ const Host = () => (
     <SignUpHero
       title="Become a host and earn some cash"
       subtitle="Turn your knowledge of your school into a side hustle. Enter in your e-mail so we can get you set up as a Shadow host"
+      formName="host-emails"
     />
     <Benefits />
     <Process />

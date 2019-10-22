@@ -4,6 +4,7 @@ import "animate.css/animate.min.css";
 import {
   Benefits,
   CTA,
+  DismissableBanner,
   Footer,
   Head,
   Header,
@@ -20,6 +21,7 @@ const Landing = () => (
     <Process />
     <CTA />
     <Footer />
+    <DismissableBanner />
   </>
 );
 
