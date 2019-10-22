@@ -5,7 +5,7 @@ import Container from "./Container";
 
 import ShadowLogo from "../assets/shadow_logo.svg";
 
-const Header = () => {
+const Header = ({ shadowLink }) => {
   return (
     <HeaderWrapper>
       <HeaderContainer>
@@ -13,9 +13,15 @@ const Header = () => {
           <Logo src={ShadowLogo} />
         </a>
 
-        <Button as="a" href="/host" small darker>
-          Sign Up to Host
-        </Button>
+        {shadowLink ? (
+          <Button as="a" href="/shadow" small darker>
+            Sign Up to Shadow
+          </Button>
+        ) : (
+          <Button as="a" href="/host" small darker>
+            Sign Up to Host
+          </Button>
+        )}
       </HeaderContainer>
     </HeaderWrapper>
   );
