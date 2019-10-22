@@ -31,7 +31,12 @@ class ShadowDocument extends Document {
   render() {
     return (
       <html>
-        <Head />
+        <Head>
+          <link
+            href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700&display=swap"
+            rel="stylesheet"
+          />
+        </Head>
         <body>
           <Main />
           <NextScript />
