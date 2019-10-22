@@ -26,7 +26,7 @@ const Benefits = () => (
         </BenefitColumn>
 
         <BenefitColumn>
-          <ScrollAnimation animateIn="fadeIn" delay={300}>
+          <ScrollAnimation animateIn="fadeIn" delay={150}>
             <h3>Personalized for you</h3>
             <p>
               Get tours customized to your personal desires and aspirations.
@@ -35,7 +35,7 @@ const Benefits = () => (
         </BenefitColumn>
 
         <BenefitColumn>
-          <ScrollAnimation animateIn="fadeIn" delay={600}>
+          <ScrollAnimation animateIn="fadeIn" delay={300}>
             <h3>Credible students</h3>
             <p>Meet verified and trusted students, vetted by us.</p>
           </ScrollAnimation>
